@@ -1,5 +1,5 @@
 // when window.scroll = offsetTop of section remove class hidden from section
-let hiddens = Array.from(document.querySelectorAll(".hidden"));
+let hiddens = Array.from(document.querySelectorAll(".hidden:not(.container.hidden)"));
 let landing = document.querySelector(".landing .container.hidden");
 
 window.addEventListener("scroll", () => {

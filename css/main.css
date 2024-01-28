@@ -326,6 +326,16 @@ section {
     opacity: 0;   
 } 
 
+@media (max-width: 992px) {
+    .sect.hidden .container .images .img-holder:first-of-type {
+        transform: translateX(-50px);  
+    } 
+    
+    .sect.hidden .container .images .img-holder:last-of-type {
+        transform: translateX(50px);
+    } 
+}
+
 .sect .container .text {
     flex-basis: calc(100% - 500px);
 }
